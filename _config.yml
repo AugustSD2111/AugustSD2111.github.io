@@ -22,8 +22,8 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://augustsd2111.github.io/Fodbold_hjemmeside/"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Beautiful Jekyll: "aboutme"
+    - Learn markdown: "aboutme"
   Author's home: "https://deanattali.com"
 
 ################
