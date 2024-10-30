@@ -3,7 +3,7 @@ layout: page
 title: About me
 subtitle: Why you'd want to go on a date with me
 ---
-
+![hej](https://raw.githubusercontent.com/AugustSD2111/AugustSD2111.github.io/refs/heads/master/assets/img/thumb.png)
 My name is Inigo Montoya. I have the following qualities:
 
 - I rock a great mustache
