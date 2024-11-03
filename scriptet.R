@@ -176,7 +176,7 @@ dev.off()
 # ```
 # 
 # ```{r}
-png(filename = paste0(sti_billeder, "position_graf.png"), width = 1000, height = 800)
+png(filename = paste0(sti_billeder, "position_graf.png"), width = 800, height = 600)
 test2 %>% 
   filter(!is.na(position)) %>% 
   group_by(pindespil_id, position, udfald) %>%
