@@ -4,7 +4,7 @@ title: Pinde efter spiler
 subtitle: 
 ---
 
-```{r setup}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 Sys.Date()
 ```
 
