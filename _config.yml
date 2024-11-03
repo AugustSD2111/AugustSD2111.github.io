@@ -20,11 +20,11 @@ author: Some Person
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
-  Resources:
+  Pinde: "aboutme"
+  Andre stats:
     - Position: "position"
     - Learn markdown: "aboutme"
-  Author's home: "https://deanattali.com"
+  Rådata: 
 
 ################
 # --- Logo --- #
