@@ -22,7 +22,7 @@ author: Some Person
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - hej: "plots"
+    - Position: "position"
     - Learn markdown: "aboutme"
   Author's home: "https://deanattali.com"
 
