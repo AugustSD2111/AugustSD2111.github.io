@@ -132,7 +132,7 @@ dev.off()
 #   
 #   
 #   ```{r echo=FALSE, message=FALSE, warning=FALSE}
-png(filename = paste0(sti_billeder, "position_rank.png"), width = 1000, height = 800)
+png(filename = paste0(sti_billeder, "position_rank.png"), width = 1000, height = 1200)
 test2 %>% 
   filter(!is.na(position)) %>% 
   group_by(pindespil_id, position, udfald) %>%
