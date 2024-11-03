@@ -108,7 +108,7 @@ test2 <- test %>%
   left_join(df, by = c("spiller"="name"))
 
 
-png(filename = paste0(sti_billeder, "pinde_spiller.png"), width = 1000, height = 800)
+png(filename = paste0(sti_billeder, "pinde_spiller.png"), width = 1000, height = 1200)
 test2 %>% 
   filter(udfald == "vindende_hold", !is.na(spiller), spiller != "") %>% 
   group_by(spiller) %>%
@@ -132,7 +132,7 @@ dev.off()
 #   
 #   
 #   ```{r echo=FALSE, message=FALSE, warning=FALSE}
-png(filename = paste0(sti_billeder, "position_rank.png"), width = 1000, height = 1200)
+png(filename = paste0(sti_billeder, "position_rank.png"), width = 800, height = 600)
 test2 %>% 
   filter(!is.na(position)) %>% 
   group_by(pindespil_id, position, udfald) %>%
