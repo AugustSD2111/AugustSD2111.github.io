@@ -100,12 +100,15 @@ df <- data.frame(var = c(
   "Christian, gammel, midtbane",
   "Jokke, gammel, forsvar",
   "Thomas, ung, angreb",
-  "Alexander, ung, angreb"
+  "Alexander, ung, angreb",
+  "AndenKeeper, ung, keeper"
 )) %>% 
   separate(var, into = c("name", "age", "position"), sep = ", ", remove = TRUE)
 
 test2 <- test %>% 
   left_join(df, by = c("spiller"="name"))
+
+test2$pindespil_id <- as.numeric(test2$pindespil_id)
 
 
 png(filename = paste0(sti_billeder, "pinde_spiller.png"), width = 1000, height = 1200)
@@ -192,8 +195,8 @@ test2 %>%
   group_by(position) %>% 
   mutate(gnm = cumsum(vindende_hold)/(cumsum(tabende_hold)+cumsum(vindende_hold))*100) %>% 
   ungroup() %>% 
-  arrange(pindespil_id) %>%  
-  ggplot(aes(x = pindespil_id, y = gennemsnit, color = position)) +
+  arrange(as.numeric(pindespil_id)) %>%  
+  ggplot(aes(x = as.numeric(pindespil_id), y = gennemsnit, color = position)) +
   geom_point(size = 3, position = position_dodge(width = 0.2)) +
   geom_point(aes(y = gnm, group = position), shape = 0, size = 0, na.rm = TRUE, position = position_dodge(width = 0.2)) +
   geom_smooth(aes(y = gnm, group = position, fill = position), method = "loess", se = F, na.rm = TRUE,
