@@ -23,7 +23,8 @@ navbar-links:
   Pinde: "aboutme"
   Andre stats:
     - Position: "position"
-    - Learn markdown: "aboutme"
+    - Alder: "alder"
+    - Trøjer: "trojer"
   Rådata: "plots"
 
 ################
