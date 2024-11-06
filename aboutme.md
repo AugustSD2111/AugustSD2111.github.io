@@ -1,11 +1,7 @@
 ---
 layout: page
-title: Pinde efter spiler
-subtitle: 
+title: Pinde 
+subtitle: efter spiller
 ---
-
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-Sys.Date()
-```
 
 ![hej](https://raw.githubusercontent.com/AugustSD2111/AugustSD2111.github.io/refs/heads/master/assets/img/pinde_spiller.png)
