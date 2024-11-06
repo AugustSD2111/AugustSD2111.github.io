@@ -24,7 +24,7 @@ navbar-links:
   Andre stats:
     - Position: "position"
     - Learn markdown: "aboutme"
-  Rådata: 
+  Rådata: "plots"
 
 ################
 # --- Logo --- #
